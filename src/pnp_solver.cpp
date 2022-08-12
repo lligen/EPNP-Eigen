@@ -212,7 +212,7 @@ void PnpSolver::find_betas_2(const Eigen::Matrix<double,6,10> &L_6x10,const Eige
     Betas[1]=(B5[2]>0)?sqrt(B5[2]):0.0;
   }
   if(B5[1]<0.0)
-    B5[0]=-B5[0];
+    Betas[0]=-Betas[0];
   Betas[2]=B5[3]/Betas[0];
   Betas[3]=0.0;
 }
